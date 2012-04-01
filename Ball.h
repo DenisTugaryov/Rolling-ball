@@ -4,19 +4,16 @@
 #include <QPainter>
 #include "GameObject.h"
 
-class Ball : public GameObject
+struct Ball : public GameObject
 {
-public:
 	int x;
 	int y;
 	int z;
+	int diametr;
 
-	Ball(int x = 100, int y = 200, int z = 0);
+	Ball(int x = 100, int y = 200, int z = 0, int diametr = 50);
 	void draw(QPainter& );
-	void setX(int a);
-	void setY(int a);
-	void setZ(int a);
-	void setXYZ(int a, int b, int c);
+	
 };
 
 #endif //_BALL_H_
