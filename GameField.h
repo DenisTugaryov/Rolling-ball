@@ -1,5 +1,5 @@
-#ifndef _GAME_FIELD_H_
-#define _GAME_FIELD_H_
+#ifndef GAME_FIELD_H
+#define GAME_FIELD_H
 
 #include <QWidget>
 #include <QtGui/QPaintEvent>
@@ -7,16 +7,16 @@
 
 #include "Ball.h"
 
-class GameField : public QWidget
+class CGameField : public QWidget
 {
-public:
-	Ball ball;
-	int myTimerId;
+  CBall ball;
+  int myTimerId;
 
-	void paintEvent(QPaintEvent* event );
-	void keyPressEvent(QKeyEvent* event);
-	void showEvent(QShowEvent* event);
-	void timerEvent(QTimerEvent* event);
+public:
+  void paintEvent(QPaintEvent* event );
+  void keyPressEvent(QKeyEvent* event);
+  void showEvent(QShowEvent* event);
+  void timerEvent(QTimerEvent* event);
 };
 
-#endif //_GAME_FIELD_H_
+#endif //GAME_FIELD_H

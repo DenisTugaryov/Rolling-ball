@@ -11,12 +11,12 @@
 
 int main(int argc, char *argv[])
 {
-	QApplication app(argc, argv);
-	GameField window;
+  QApplication app(argc, argv);
+  CGameField window;
 
-	window.resize(300, 500);
-	window.setWindowTitle("Rolling-ball");
-	window.show();
+  window.resize(300, 500);
+  window.setWindowTitle("Rolling-ball");
+  window.show();
 
-	return app.exec();
+  return app.exec();
 }

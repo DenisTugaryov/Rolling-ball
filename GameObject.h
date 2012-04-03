@@ -1,13 +1,12 @@
-#ifndef _GAME_OBJECT_H_
-#define _GAME_OBJECT_H_
+#ifndef GAME_OBJECT_H
+#define GAME_OBJECT_H
 
 #include <QPainter>
 
-class GameObject 
+class CGameObject 
 {
 public:
-	virtual void draw (QPainter& ) = 0;
+  virtual void draw(QPainter& ) = 0;
 };
 
-
-#endif //_GAME_OBJECT_H_
+#endif //GAME_OBJECT_H

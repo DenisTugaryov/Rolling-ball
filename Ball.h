@@ -1,19 +1,18 @@
-#ifndef _BALL_H_
-#define _BALL_H_
+#ifndef BALL_H
+#define BALL_H
 
 #include <QPainter>
 #include "GameObject.h"
 
-struct Ball : public GameObject
+struct CBall : public CGameObject
 {
-	int x;
-	int y;
-	int z;
-	int diametr;
+  int x;
+  int y;
+  int z;
+  int diametr;
 
-	Ball(int x = 100, int y = 200, int z = 0, int diametr = 50);
-	void draw(QPainter& );
-	
+  CBall(int x = 100, int y = 200, int z = 0, int diametr = 50);
+  void draw(QPainter& );
 };
 
-#endif //_BALL_H_
+#endif //BALL_H
