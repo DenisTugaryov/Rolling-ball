@@ -6,17 +6,17 @@
 #include <QPainter>
 
 #include "Ball.h"
+#include "Wall.h"
 
 class CGameField : public QWidget
 {
   CBall ball;
+  CWall walls;
   int myTimerId;
 
 public:
   void paintEvent(QPaintEvent* event );
   void keyPressEvent(QKeyEvent* event);
-  void showEvent(QShowEvent* event);
-  void timerEvent(QTimerEvent* event);
 };
 
 #endif //GAME_FIELD_H

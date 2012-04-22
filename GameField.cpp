@@ -5,6 +5,7 @@
 
 #include "GameField.h"
 #include "Ball.h"
+#include "Wall.h"
 
 #include <iostream>
 
@@ -13,6 +14,7 @@ void CGameField::paintEvent(QPaintEvent* /*event*/)
   QPainter painter;
   painter.begin(this);
   ball.draw(painter);
+  walls.draw(painter);
 }
 
 void CGameField::keyPressEvent(QKeyEvent* event)
@@ -65,17 +67,5 @@ void CGameField::keyPressEvent(QKeyEvent* event)
       break;
     }
   }
-}
-
-void CGameField::showEvent(QShowEvent* /*event*/)
-{
-  myTimerId = startTimer(20);
-}
-
-void CGameField::timerEvent(QTimerEvent* event)
-{
-  if (event->timerId() == myTimerId) 
-  {
-    update();
-  }
+  update();
 }

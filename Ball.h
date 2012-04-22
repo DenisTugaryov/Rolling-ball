@@ -11,7 +11,7 @@ struct CBall : public CGameObject
   int z;
   int diametr;
 
-  CBall(int x = 100, int y = 200, int z = 0, int diametr = 50);
+  CBall(int x = 0, int y = 0, int z = 0, int diametr = 50);
   void draw(QPainter& );
 };
 
