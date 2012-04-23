@@ -1,8 +1,6 @@
 #include <QApplication>
 #include <QWidget>
 #include <QPainter>
-#include <QtGui/QPaintEvent>
-#include <QPainterPath>
 
 #include "GameField.h"
 #include "GameObject.h"

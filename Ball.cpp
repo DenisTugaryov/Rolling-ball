@@ -1,5 +1,4 @@
 #include <QPainter>
-#include <QPainterPath>
 #include "Ball.h"
 
 CBall::CBall(int x /*= 100*/, int y /*= 200*/, int z /*=0*/, int diametr /*= 50*/) :
